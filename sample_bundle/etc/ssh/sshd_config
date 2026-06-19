@@ -1,0 +1,39 @@
+# Sample insecure sshd_config — intentionally configured to trigger many findings
+Port 22
+Protocol 2
+ListenAddress 0.0.0.0
+
+# CRIT: root login over SSH allowed
+PermitRootLogin yes
+
+# CRIT/HIGH: password auth + empty passwords
+PasswordAuthentication yes
+PermitEmptyPasswords yes
+
+# MED: high MaxAuthTries
+MaxAuthTries 8
+
+# LOW: lenient timeout
+ClientAliveInterval 0
+ClientAliveCountMax 3
+
+LoginGraceTime 120
+
+# MED: tcp forwarding on, no banner
+AllowTcpForwarding yes
+X11Forwarding yes
+
+LogLevel INFO
+
+# HIGH: weak macs and ciphers
+MACs hmac-md5,hmac-sha1
+Ciphers aes128-cbc,3des-cbc,aes256-ctr
+
+# HIGH: PAM disabled, host-based auth allowed
+UsePAM no
+HostbasedAuthentication yes
+IgnoreRhosts no
+
+GSSAPIAuthentication yes
+
+# No Banner directive set

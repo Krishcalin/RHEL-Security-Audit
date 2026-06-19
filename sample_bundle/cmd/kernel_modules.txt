@@ -1,0 +1,9 @@
+# Command: lsmod
+---
+Module                  Size  Used by
+cramfs                 28672  0
+squashfs               53248  0
+xfs                  1822720  3
+ext4                  778240  0
+---
+# Exit: 0

@@ -1,0 +1,4 @@
+# Command: systemctl list-units --state=failed
+---
+---
+# Exit: 0

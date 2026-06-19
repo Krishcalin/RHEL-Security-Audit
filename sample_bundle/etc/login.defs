@@ -1,0 +1,6 @@
+# /etc/login.defs sample
+PASS_MAX_DAYS   99999
+PASS_MIN_DAYS   0
+PASS_WARN_AGE   3
+UMASK           022
+ENCRYPT_METHOD  SHA512

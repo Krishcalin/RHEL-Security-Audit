@@ -1,0 +1,11 @@
+# Command: ss -tulnp
+---
+Netid State  Recv-Q Send-Q Local Address:Port              Peer Address:Port
+tcp   LISTEN 0      128    0.0.0.0:22                      0.0.0.0:*
+tcp   LISTEN 0      128    0.0.0.0:23                      0.0.0.0:*
+tcp   LISTEN 0      128    0.0.0.0:445                     0.0.0.0:*
+tcp   LISTEN 0      128    0.0.0.0:111                     0.0.0.0:*
+tcp   LISTEN 0      128    127.0.0.1:5432                  0.0.0.0:*
+udp   LISTEN 0      0      0.0.0.0:69                      0.0.0.0:*
+---
+# Exit: 0

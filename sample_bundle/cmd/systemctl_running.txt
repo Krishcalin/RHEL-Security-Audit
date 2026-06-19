@@ -1,0 +1,8 @@
+# Command: systemctl list-units --type=service --state=running
+---
+auditd.service          loaded active running Security Auditing Service
+sshd.service            loaded active running OpenSSH server daemon
+chronyd.service         loaded active running NTP client/server
+crond.service           loaded active running Command Scheduler
+---
+# Exit: 0

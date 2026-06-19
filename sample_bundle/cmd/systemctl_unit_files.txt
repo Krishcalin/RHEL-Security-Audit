@@ -1,0 +1,20 @@
+# Command: systemctl list-unit-files --no-pager --no-legend
+# Captured: 2026-06-19T10:00:00Z
+# Host: rhel8-demo
+---
+auditd.service                              enabled
+firewalld.service                           disabled
+sshd.service                                enabled
+chronyd.service                             enabled
+crond.service                               enabled
+telnet.socket                               enabled
+vsftpd.service                              enabled
+xinetd.service                              enabled
+avahi-daemon.service                        enabled
+snmpd.service                               enabled
+cups.service                                enabled
+NetworkManager.service                      enabled
+nfs-server.service                          disabled
+rpcbind.service                             enabled
+---
+# Exit: 0

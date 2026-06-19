@@ -1,0 +1,3 @@
+# /etc/selinux/config — disabled to trigger SEL-002
+SELINUX=permissive
+SELINUXTYPE=targeted

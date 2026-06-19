@@ -1,0 +1,17 @@
+## /etc/sudoers (sample insecure)
+Defaults    !visiblepw
+Defaults    always_set_home
+
+# Wheel
+%wheel  ALL=(ALL)       ALL
+
+# Sample bad: NOPASSWD all
+alice   ALL=(ALL) NOPASSWD: ALL
+
+# Sample bad: !authenticate
+bob ALL=(ALL) !authenticate, ALL
+
+# Broad grant to non-wheel
+%developers ALL=(ALL) ALL
+
+#includedir /etc/sudoers.d

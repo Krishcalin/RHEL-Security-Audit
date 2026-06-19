@@ -1,0 +1,5 @@
+# Command: auditctl -l
+---
+No rules
+---
+# Exit: 0

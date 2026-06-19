@@ -1,0 +1,10 @@
+# Command: firewall-cmd --list-all-zones
+---
+trusted (default, active)
+  target: ACCEPT
+  interfaces: ens192
+  sources:
+  services:
+  ports:
+---
+# Exit: 0
